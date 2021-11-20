@@ -1,0 +1,22 @@
+:root {
+    font-family: 'Spartan', sans-serif;
+    --fw-light: 400;
+    --fw-normal: 500;
+    --fw-bold: 700;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-weight: var(--fw-bold);
+}
+
+p {
+    font-weight: var(--fw-normal);
+}

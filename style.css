@@ -5,6 +5,20 @@
     --fw-bold: 700;
     box-sizing: border-box;
     font-size: 15px;
+    --border-radius: 1em;
+    --bg-clr-review: hsl(300, 43%, 22%);
+    --clr-review-h2: hsl(300, 24%, 96%);
+    --clr-review-verified-buyer: hsl(333, 80%, 67%);
+    --clr-review-text: hsl(300, 24%, 96%);
+    --clr-p: hsl(303, 10%, 53%);
+    --clr-star-rating-bg: hsl(300, 24%, 96%);
+    --clr-start-rating: hsl(300, 43%, 22%);
+    ---aaa: hsl(300, 43%, 22%);
+    --bbb: hsl(333, 80%, 67%);
+    --ccc: hsl(303, 10%, 53%);
+    --ddd: hsl(300, 24%, 96%);
+    --eee: hsl(0, 0%, 100%);
+    --padding-default: 1.5em;
 }
 
 *,
@@ -13,10 +27,95 @@
     box-sizing: inherit;
 }
 
+body *+* {
+    margin-top: 1.5em;
+}
+
 h1 {
     font-weight: var(--fw-bold);
 }
 
 p {
     font-weight: var(--fw-normal);
+}
+
+
+/* Containers */
+
+.container__start-rating,
+.container__review {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.review+.review,
+.stars-rating+.stars-rating {
+    margin-top: 1em;
+}
+
+h1 {
+    color: var(--bg-clr-review);
+}
+
+body>p {
+    color: var(--clr-p)
+}
+
+
+/* Stars rating styles */
+
+.stars-rating {
+    border-radius: var(--border-radius);
+    background: var(--clr-star-rating-bg);
+}
+
+.stars-rating>p {
+    text-align: center;
+    color: var(--clr-start-rating);
+    font-weight: var(--fw-bold);
+}
+
+
+/* Review styles */
+
+.review {
+    background-color: var(--bg-clr-review);
+    border-radius: var(--border-radius);
+    padding-top: var(--padding-default);
+    padding-left: 2em;
+    padding-bottom: var(--padding-default);
+}
+
+.reviewer-name {
+    color: var(--clr-review-h2);
+    margin-bottom: 0.5em;
+    margin-top: 0;
+}
+
+.verified-byer {
+    color: var(--clr-review-verified-buyer);
+    margin-top: 0;
+}
+
+.review-text {
+    color: var(--clr-review-text);
+    line-height: 2;
+}
+
+.reviewer-name-container {
+    display: inline;
+}
+
+.review-img {
+    border-radius: 50%;
+    max-width: 4rem;
+}
+
+.container_buyer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
 }

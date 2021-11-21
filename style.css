@@ -129,6 +129,7 @@ h1 {
     body {
         max-width: 1300px;
         margin: 5em auto;
+        background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
     }
     h1 {
         font-size: 3rem;

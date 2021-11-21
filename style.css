@@ -1,11 +1,12 @@
 :root {
     font-family: 'Spartan', sans-serif;
+    box-sizing: border-box;
+    font-size: 15px;
     --fw-light: 400;
     --fw-normal: 500;
     --fw-bold: 700;
-    box-sizing: border-box;
-    font-size: 15px;
     --border-radius: 1em;
+    --padding-default: 1.5em;
     --bg-clr-review: hsl(300, 43%, 22%);
     --clr-review-h2: hsl(300, 24%, 96%);
     --clr-review-verified-buyer: hsl(333, 80%, 67%);
@@ -13,12 +14,6 @@
     --clr-p: hsl(303, 10%, 53%);
     --clr-star-rating-bg: hsl(300, 24%, 96%);
     --clr-start-rating: hsl(300, 43%, 22%);
-    ---aaa: hsl(300, 43%, 22%);
-    --bbb: hsl(333, 80%, 67%);
-    --ccc: hsl(303, 10%, 53%);
-    --ddd: hsl(300, 24%, 96%);
-    --eee: hsl(0, 0%, 100%);
-    --padding-default: 1.5em;
 }
 
 *,

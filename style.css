@@ -62,7 +62,7 @@ h1 {
     text-align: center;
 }
 
-body>p {
+.intro {
     color: var(--clr-p);
     text-align: center;
 }
@@ -125,4 +125,50 @@ body>p {
     gap: 2em;
 }
 
-@media (min-width: 376px) {}
+@media (min-width: 376px) {
+    body {
+        max-width: 1300px;
+        margin: 5em auto;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .container-desktop {
+        display: flex;
+        gap: 2em;
+        justify-content: space-between;
+    }
+    .intro {
+        margin-left: 5em;
+        max-width: 30%;
+    }
+    .container__start-rating {
+        justify-content: center;
+    }
+    .stars-rating {
+        text-align: center;
+        padding: 0 0 1em 1em;
+        min-width: 35em;
+        max-width: 35em;
+    }
+    .stars-rating>p {
+        display: inline;
+        margin-left: 1em;
+    }
+    .second-star-rating {
+        margin-left: 4em;
+    }
+    .third-star-rating {
+        margin-left: 8em;
+    }
+    .container__review {
+        flex-direction: row;
+        gap: 2em;
+    }
+    .review {
+        padding: 1.5em;
+    }
+    .review+.review {
+        margin: 0;
+    }
+}

@@ -127,7 +127,7 @@ h1 {
 
 @media (min-width: 376px) {
     body {
-        max-width: 1300px;
+        max-width: 1440px;
         margin: 5em auto;
         background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
     }

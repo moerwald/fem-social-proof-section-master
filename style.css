@@ -56,10 +56,12 @@ p {
 
 h1 {
     color: var(--bg-clr-review);
+    text-align: center;
 }
 
 body>p {
-    color: var(--clr-p)
+    color: var(--clr-p);
+    text-align: center;
 }
 
 

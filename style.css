@@ -1,7 +1,7 @@
 :root {
     font-family: 'Spartan', sans-serif;
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 20px;
     --fw-light: 400;
     --fw-normal: 500;
     --fw-bold: 700;
@@ -89,6 +89,7 @@ h1 {
     border-radius: var(--border-radius);
     padding-top: var(--padding-default);
     padding-left: 2em;
+    padding-right: 1em;
     padding-bottom: var(--padding-default);
 }
 
